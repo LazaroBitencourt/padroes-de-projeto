@@ -1,7 +1,3 @@
 package abstractFactory;
-
-
-
-public class Moto{
-
+public class Som {
 }
