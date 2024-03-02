@@ -1,6 +1,7 @@
 package abstractFactory;
 
-public class Carro implements Veiculo{
+public class  Moto implements Veiculo{
+
     @Override
     public void motor() {
 

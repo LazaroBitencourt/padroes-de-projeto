@@ -1,9 +1,8 @@
 package abstractFactory;
 
-public class Carro implements Veiculo{
+public class MotoFraca extends Moto{
     @Override
     public void motor() {
-
+        System.out.println("100cv");
     }
-
 }

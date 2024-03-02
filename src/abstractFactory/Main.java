@@ -1,12 +1,14 @@
 package abstractFactory;
 
+
+
 public class Main {
     public static void main(String[] args) {
-
-        Carro carroDeLuxo = TestFactory.montarCarro("luxo");
-        Carro carroPopular = TestFactory.montarCarro("popular");
-
-      System.out.println(carroPopular);
-
+        FabricaVeiculo fabricaDeCarros = new FabricaVeiculoCarro();
+        FabricaVeiculo fabricaDeMotos = new FabricaVeiculoMoto();
+        Veiculo carroLuxo = fabricaDeCarros.fabricaVeiculo("carroDeLuxo");
+        Veiculo carroPopular = fabricaDeCarros.fabricaVeiculo("carroPopular");
+        carroPopular.motor();
+        carroLuxo.motor();
     }
 }
